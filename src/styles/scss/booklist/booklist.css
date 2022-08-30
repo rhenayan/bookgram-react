@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 50px auto;
+}
+
+.books-list {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  justify-content: space-between;
+  grid-gap: 25px;
+}
+
+.books {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.books__title {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 16px;
+}
+.books__message {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin-top: 50px;
+}/*# sourceMappingURL=booklist.css.map */

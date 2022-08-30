@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+//colors
+$orange-light: #fe902d;
+$orange: #fe4501;
+$coral: #fe8551;
+
+$black: #010101;
+$black-lighten: #01010199;
+
+
+$gray-light: #f6f6f6;
+$gray-medium: #d8dfed;
+$gray-dark: #9496a5;
+$cloudy: #b2aaa4;
+$gray-darker: #43464b;
+$chicago: #605e5c;
+
+
+$white: #ffff;
+$denim-blue: #0d86bc;
+
+
+$fantasy: #faf5f1;
+
+
+// color assignments 
+$border-color: $black;
+$input-bg: $gray-medium;
+$input-textColor:$black-lighten;
+$link-color: $denim-blue;
+$text-color:$gray-darker;
+$bg-color: $fantasy;
+$button-bg: $orange;
+$button-hover: $gray-darker;
+
+$border-radius: 3px;
+$fw-800: 800;
+
+
+//type scale
+
+$scale-12: 12.80px;
+$scale-16: 16px;
+$scale-20: 20px;
+$scale-25: 25px;
+$scale-30: 31.25px;
+
+
+// font style
+
+$font-family: 'Poppins', sans-serif;
+
+
+//animation 
+$transition-3s-cubic:  all 0.3s cubic-bezier(0, 0, 0.43, 1.49);

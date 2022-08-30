@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.navbar {
+  height: 50px;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fe902d;
+  color: #010101;
+  font-size: 16px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar h2:hover {
+  color: white;
+  transition: all 0.3s cubic-bezier(0, 0, 0.43, 1.49);
+}
+@media (max-width: 490px) {
+  .navbar {
+    padding: 0 20px;
+  }
+}/*# sourceMappingURL=navbar.css.map */

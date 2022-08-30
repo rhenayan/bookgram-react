@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Search from './components/Search';
+import { Routes, Route } from 'react-router-dom';
+// import BookList from './components/BookList';
+// import BookDetails from './components/BookDetails'
+import FavoriteList from './components/FavoriteList';
+import Navbar from './components/Navbar';
+import "the-new-css-reset/css/reset.css";
+
+const LazySearchResults = React.lazy(()=> import('./components/BookList'));
+const LazyBookDetails = React.lazy(()=> import('./components/BookDetails'))
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Search/>} />
+        <Route path='/books/' element={<React.Suspense fallback ='Loading...'><LazySearchResults/></React.Suspense>} />
+        <Route path='/books/:id' element={<React.Suspense fallback ='Loading...'><LazyBookDetails/></React.Suspense>} />
+        <Route path='/favorites' element={<FavoriteList />} />
+      </Routes>
+    </>
   );
 }
 

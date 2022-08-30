@@ -1,0 +1,32 @@
+ // eslint-disable-next-line 
+@import '../variables';
+
+.navbar{
+    height: 50px;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $orange-light;
+    color: $black;
+    font-size: $scale-16;
+    position:sticky;
+    top: 0;
+    z-index: 100;
+
+    h2 {
+        &:hover {
+            color: $white;
+            transition:$transition-3s-cubic;
+        }
+    }
+   
+    $layout-breakpoint: 490px;
+
+    @media (max-width: $layout-breakpoint) {
+        padding: 0 20px;
+}
+
+    
+}
+
